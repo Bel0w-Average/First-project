@@ -1,0 +1,49 @@
+<html>
+    <head> 
+        <style>
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                background: rgb(30 ,30, 30);
+            }
+            h1{
+                font-size: 10rem;
+                background: linear-gradient(to right,rgb(67,124,205),
+                rgb(60, 179, 141));
+                -webkit-background-clip :text;
+                -webkit-text-fill-color: transparent;
+                pointer-events: none;
+                animation : load 5s 100ms 1 forwards ease-in ;
+            }
+            input{
+                border-radius: 10px;
+                width: 420px;
+                height: 5vh;
+                opacity: 0 ;
+                background-color: black;
+                box-shadow: none ;
+                transform: translateY(-100px);
+                animation : load 3s 2s forwards ease-in ;
+                
+            }
+             @keyframes load {
+                0%{
+                    opacity: 0%;
+                }
+                100%{
+                    opacity: 100%;
+                }
+             }
+
+        </style>    
+    </head>
+    <body> 
+        <div class="back">
+            <h1> Ayush </h1>
+            <input type="text" value="" placeholder="Search">
+        </div>
+            
+    </body>
+</html>
